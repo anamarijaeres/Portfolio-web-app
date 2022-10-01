@@ -1,0 +1,221 @@
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+
+}
+
+.experience__container > div{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    gap: 5%;
+}
+
+.experience__container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
+
+.experience__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.experience__details{
+    display: flex;
+    gap: 1rem;
+
+
+
+}
+
+.experience__details-icon{
+     position: absolute;
+     margin-top: 7px;
+     margin-left: -2rem;
+     color: var(--color-primary);
+ }
+
+.experience__title-icon{
+    font-size: 3em;
+    text-align: center;
+
+    color: var(--color-primary);
+}
+
+.experience-intro{
+    text-align: center;
+}
+
+.container__skill{
+    box-sizing: content-box;
+    height: 10px;
+    width: 150px; /* Full width */
+    background-color: white; /* Grey background */
+    border-radius: 10rem;
+}
+
+.experienced{
+    box-sizing: border-box;
+    border-radius: 5rem;
+    height: 10px;
+    width: 75%;
+    background-color: var(--color-primary);
+}
+
+
+.basic{
+    box-sizing: border-box;
+    border-radius: 5rem;
+    height: 10px;
+    width: 25%;
+    background-color: var(--color-primary);
+}
+
+.intermediate{
+    box-sizing: border-box;
+    border-radius: 5rem;
+    height: 10px;
+    width: 50%;
+    background-color: var(--color-primary)
+}
+
+.veryexperienced{
+    box-sizing: border-box;
+    border-radius: 5rem;
+    height: 10px;
+    width: 100%;
+    background-color: var(--color-primary)
+}
+
+.skills__close .experience__details-icon{
+    height: 0;
+}
+.skills__close .experience__details{
+    transition: var(--transition);
+    height: 0;
+    overflow: hidden;
+
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.skills__open .experience__details{
+    height: max-content;
+    margin-bottom: 2px;
+    margin-left: 3.5rem;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.skills__open__experience-icon{
+    height: 0;
+    color: var(--color-primary);
+    position: absolute;
+    transform:rotate(-180deg);
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+
+
+}
+
+.skills__close__experience-icon{
+    transform:rotate(0deg);
+    color: var(--color-primary);
+    position: absolute;
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+
+}
+
+.skills__open__experience-icon2{
+    transform:rotate(0deg);
+    color: var(--color-primary);
+    position: absolute;
+
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+
+}
+
+.skills__close__experience-icon2{
+    height: 0;
+    transform:rotate(0deg);
+    position: absolute;
+    left: 2px;
+    color: var(--color-primary);
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+   .experience__container{
+       grid-template-columns: 1fr 1fr;
+   }
+
+    .experience__container> div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content{
+        padding: 1rem;
+    }
+    .experience__title-icon{
+        font-size: 3em;
+        text-align: center;
+        color: var(--color-primary);
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .experience-intro{
+        display: none;
+    }
+    .experience__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .experience__container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+    }
+
+    .experience__content{
+        padding: 1rem;
+    }
+
+    .experience__title-icon{
+        font-size: 3em;
+        text-align: center;
+        color: var(--color-primary);
+    }
+
+}

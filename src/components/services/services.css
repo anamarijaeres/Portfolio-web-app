@@ -1,0 +1,298 @@
+.services__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.play__bar{
+    box-sizing: border-box;
+
+    background: transparent;
+    border-radius: 2rem 2rem 2rem 2rem;
+
+    border: 1px solid var(--color-primary);
+    height: 9rem;
+    margin-bottom: 2rem;
+
+}
+
+#more2 {display: none;}
+.service__intro{
+    text-align: center;
+}
+.readmore__button{
+    color: var(--color-primary);
+    display: inline-block;
+    cursor: pointer;
+}
+.play__bar__circle{
+     position: absolute;
+     left: 23rem;
+     margin: 0.8rem 0 0 0;
+     font-size: 1.2rem;
+     color: var(--color-bg-variant) ;
+}
+.play__bar__circle:hover{
+    color: white;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.play__bar__circle2{
+    position: absolute;
+    left: 47rem;
+    margin: 0.8rem 0 0 0;
+    font-size: 1.2rem;
+    color: var(--color-bg-variant) ;
+}
+
+.play__bar__circle2:hover{
+
+    color: white;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.play__bar__circle3{
+    position: absolute;
+    left: 72rem;
+    margin: 0.8rem 0 0 0;
+    font-size: 1.2rem;
+    color: var(--color-bg-variant) ;
+}
+.play__bar__circle3:hover{
+    color: white;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.shuffle__icon{
+    position: absolute;
+    margin: 2.8rem 0 0 1.8rem;
+    font-size: 2em;
+}
+
+.repeat__icon{
+    position: absolute;
+    margin: 2.8rem 0 0 68rem;
+    font-size: 2rem;
+
+}
+.age__2017{
+    position: absolute;
+    margin: 0rem 0 0 0.5rem;
+    font-size: 1.2rem;
+
+}
+.age__2022{
+    position: absolute;
+    margin: 0rem 0 0 59rem;
+    font-size: 1.2rem;
+
+}
+.age__2021{
+    position: absolute;
+    margin: 0rem 0 0 34rem;
+    font-size: 1.2rem;
+
+}
+.age__2020{
+    position: absolute;
+    margin: 0rem 0 0 10rem;
+    font-size: 1.2rem;
+
+}
+.active{
+    color: white;
+}
+
+.container__skills{
+
+    justify-content: space-between;
+    margin: 20px 20px 20px 27px ;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 5px;
+    width: 95%; /* Full width */
+    background-color: var(--color-bg-variant); /* Grey background */
+
+}
+
+.bacc{
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 5px;
+    width: 15%;
+    background-color: white;
+    transition: var(--transition);
+}
+
+
+.masteres{
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 5px;
+    width: 50%;
+    background-color: white;
+    transition: var(--transition);
+}
+
+.masterhr{
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 5px;
+    width: 87%;
+    background-color: white;
+    transition: var(--transition);
+}
+
+
+
+
+
+.service{
+    background: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.service:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+
+}
+
+.service__head{
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service__head:hover{
+    cursor: pointer;
+}
+.service__head h3{
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.service__list{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.service__list li{
+    display: table-row;
+    gap:2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    left: 2rem;
+}
+
+.service__list-icon{
+    color: var(--color-primary);
+    position: absolute;
+    margin: 0.3rem 0 0 -2rem;
+    font-size: 1rem;
+}
+.service__list-icon:hover{
+    cursor: pointer;
+}
+
+.service__list p{
+    font-size: 0.9rem;
+}
+
+.skills__close .service__head{
+     background: var(--color-primary);
+     text-align: center;
+     transition: var(--transition);
+
+ }
+
+.skills__close .service__list{
+    transition: var(--transition);
+    height: 0;
+    margin: 0 0 0 0;
+    overflow: hidden;
+
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    transition: var(--transition);
+}
+
+.skills__open .service__head{
+
+    transition: var(--transition);
+
+}
+
+.skills__open .service__list {
+
+
+}
+.skills__close .service__list-icon{
+    font-size: 0;
+}
+
+.dont__show__me{
+    height: 0;
+    font-size: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .services__container{
+        grid-template-columns: 1fr 1fr;
+        gap:2rem
+    }
+    .service{
+        height: max-content;
+    }
+    .play__bar{
+        display: none;
+    }
+    .service__intro{
+        display: none;
+    }
+
+    .service__list li{
+        display: table-row;
+        gap:2rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        left: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .services__container{
+        grid-template-columns: 1fr;
+        gap:1.5rem;
+    }
+
+    .play__bar{
+        display: none;
+    }
+    .service__intro{
+        display: none;
+    }
+
+
+}

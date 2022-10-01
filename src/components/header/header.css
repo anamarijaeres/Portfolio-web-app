@@ -1,0 +1,165 @@
+header{
+    height: 90vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
+
+}
+
+.header__content{
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+
+
+/*========CTA======*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*========HEADER SOCIALS======*/
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 10rem;
+    top:20rem;
+
+}
+
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+
+}
+
+.header__image{
+    display: grid;
+    place-items: center;
+}
+/*========ME======*/
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+
+    margin:0 2rem 2rem  0;
+    border-radius: 15rem 15rem 15rem 15rem;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+
+}
+.me:hover .overlay {
+    opacity: 1;
+
+}
+.croatianme{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.happy__me{
+    font-size: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+/*========SCROLL DOWN ==========*/
+.scroll__down{
+    position: absolute;
+    right: 27rem;
+    bottom: 10rem;
+
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+   header{
+       height: 68vh;
+   }
+
+    .header__socials{
+        position: relative;
+        left: 30px;
+        top: 10rem;
+    }
+
+    .scroll__down{
+        position: relative;
+        right: 30px;
+        top: 7rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+
+    .header__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+
+    .header__content{
+        margin-top: 1rem;
+    }
+    .header__image{
+        justify-content: center;
+    }
+    .me{
+        margin:1rem 1rem 1rem  1rem;
+    }
+    .header__socials,.scroll__down{
+        display: none;
+    }
+}
+
