@@ -40,12 +40,11 @@ const Contact = () =>{
 
                         <a href='mailto:ana.marija.eres@gmail.com' target='_blank'> Send a message</a>
                     </article>
-
                     <article className='contact__option'>
                         <BsWhatsapp className='contact__option-icon'/>
                         <h4>WhatsApp</h4>
                         <h5>+385*******00</h5>
-                        <a href='https://api.whatsapp.com/send?phone=+385996604400' target='_blank'>Send a message</a>
+                        <a href='https://web.whatsapp.com/send?phone=+385996604400' target='_blank'>Send a message</a>
                     </article>
                 </div>
                 {/*End of contact options*/}
